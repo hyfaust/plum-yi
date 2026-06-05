@@ -108,7 +108,7 @@ const IChingPage: React.FC = () => {
                     e.currentTarget.style.borderColor = 'rgba(139,115,85,0.15)';
                   }}
                 >
-                  <div style={{ fontSize: '2.5rem', marginBottom: '14px' }}>{m === 'yarrow' ? '🌿' : '🪙'}</div>
+                  <div style={{ fontSize: '2.5rem', marginBottom: '14px' }}>{m === 'yarrow' ? '🌿' : '💰'}</div>
                   <h4 style={{ fontSize: '1.2rem', fontWeight: 600, color: '#2c1810', marginBottom: '8px' }}>
                     {t(`divination.methods.${m}.name`)}
                   </h4>
