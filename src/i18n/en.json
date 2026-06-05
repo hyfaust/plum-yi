@@ -1,0 +1,240 @@
+{
+  "app": {
+    "name": "Plum Yi",
+    "description": "Intelligent divination system based on Plum Blossom Numerology",
+    "footer": "© 2026 Plum Yi · Bridging tradition with modern technology"
+  },
+  "nav": {
+    "home": "Home",
+    "divination": "Divination",
+    "iching": "I Ching",
+    "meihua": "Plum Blossom",
+    "history": "History",
+    "settings": "Settings",
+    "about": "About"
+  },
+  "language": {
+    "label": "Language",
+    "zh": "中文",
+    "en": "English",
+    "switch": "Switch Language"
+  },
+  "home": {
+    "title": "I Ching Divination",
+    "subtitle": "Sincerity brings clarity — glimpse the cosmic truth in a single thought",
+    "startButton": "Start Divination",
+    "ichingCard": {
+      "title": "I Ching Divination",
+      "desc": "Divine using yarrow stalk or coin methods, following traditional I Ching procedures to interpret six-line hexagrams",
+      "button": "Start I Ching"
+    },
+    "meihuaCard": {
+      "title": "Plum Blossom Numerology",
+      "desc": "Divine by time, numbers, or text, applying the Plum Blossom method to perceive hidden patterns",
+      "button": "Start Plum Blossom"
+    },
+    "featureDivination": "Multiple Methods",
+    "featureDivinationDesc": "Supports yarrow stalk, coin toss, time-based, number-based, and text-based divination",
+    "featureAnalysis": "Intelligent Analysis",
+    "featureAnalysisDesc": "Auto-generates original, changed, and mutual hexagrams with Five Elements and fortune analysis",
+    "featureHistory": "Divination History",
+    "featureHistoryDesc": "Save every divination result for review and comparison anytime"
+  },
+  "divination": {
+    "title": "Choose Divination Method",
+    "subtitle": "Select your preferred method to begin divination",
+    "methods": {
+      "yarrow": {
+        "name": "Yarrow Stalk",
+        "description": "The most ancient method, simulating the Great Yarrow Divination process"
+      },
+      "coin": {
+        "name": "Coin Toss",
+        "description": "Toss three coins six times to determine yin and yang lines"
+      },
+      "time": {
+        "name": "Time-Based",
+        "description": "Generate hexagram using the current date and time numbers"
+      },
+      "number": {
+        "name": "Number-Based",
+        "description": "Think of two numbers in your mind, corresponding to upper and lower trigrams"
+      },
+      "text": {
+        "name": "Text-Based",
+        "description": "Generate hexagram from the stroke count of input characters"
+      },
+      "plumBlossom": {
+        "name": "Plum Blossom",
+        "description": "Created by Shao Yong, divines from any spontaneous thought or image"
+      }
+    }
+  },
+  "process": {
+    "title": "Divination in Progress",
+    "start": "Start Divination",
+    "shaking": "Shaking hexagram…",
+    "generating": "Generating hexagram…",
+    "complete": "Divination Complete",
+    "viewResult": "View Result",
+    "retry": "Try Again",
+    "yarrow": {
+      "step1": "Take out 50 yarrow stalks",
+      "step2": "Set aside one stalk, symbolizing the Taiji",
+      "step3": "Divide 49 stalks into two groups randomly",
+      "step4": "Take one stalk from the left group and hold between fingers",
+      "step5": "Count the left group in sets of four",
+      "step6": "Count the right group in sets of four",
+      "result": "Line {{current}} of {{total}}"
+    },
+    "coin": {
+      "instruction": "Click the button to simulate coin tosses",
+      "heads": "Heads (Yang)",
+      "tails": "Tails (Yin)",
+      "throw": "Toss {{current}} of {{total}}",
+      "throwButton": "Toss Coins"
+    },
+    "time": {
+      "instruction": "Hexagram will be generated from the current time",
+      "currentYear": "Year",
+      "currentMonth": "Month",
+      "currentDay": "Day",
+      "currentHour": "Hour",
+      "confirm": "Confirm"
+    },
+    "number": {
+      "instruction": "Enter two numbers for the upper and lower trigrams",
+      "upperLabel": "Upper Trigram Number",
+      "lowerLabel": "Lower Trigram Number",
+      "placeholder1": "Enter first number",
+      "placeholder2": "Enter second number",
+      "confirm": "Confirm",
+      "invalidNumber": "Please enter a valid positive integer"
+    },
+    "text": {
+      "instruction": "Enter the text for divination",
+      "placeholder": "Enter the text you wish to divine…",
+      "confirm": "Confirm",
+      "emptyText": "Please enter at least one character"
+    }
+  },
+  "result": {
+    "title": "Hexagram Interpretation",
+    "hexagramName": "Hexagram Name",
+    "original": "Original",
+    "changed": "Changed",
+    "mutual": "Mutual",
+    "body": "Body",
+    "use": "Use",
+    "judgment": "Judgment",
+    "lineText": "Line Text",
+    "fiveElements": "Five Elements Analysis",
+    "fortune": "Fortune",
+    "fortuneGood": "Auspicious",
+    "fortuneNeutral": "Neutral",
+    "fortuneBad": "Inauspicious",
+    "elementRelation": "Element Relations",
+    "generating": "Generating",
+    "overcoming": "Overcoming",
+    "element": {
+      "metal": "Metal",
+      "wood": "Wood",
+      "water": "Water",
+      "fire": "Fire",
+      "earth": "Earth"
+    },
+    "trigram": {
+      "qian": "Qian (Heaven)",
+      "kun": "Kun (Earth)",
+      "zhen": "Zhen (Thunder)",
+      "xun": "Xun (Wind)",
+      "kan": "Kan (Water)",
+      "li": "Li (Fire)",
+      "gen": "Gen (Mountain)",
+      "dui": "Dui (Lake)"
+    },
+    "yin": "Yin",
+    "yang": "Yang",
+    "changingLine": "Changing Line",
+    "noChangingLine": "No Changing Line",
+    "analysis": "Comprehensive Analysis",
+    "saveResult": "Save Result",
+    "shareResult": "Share Result",
+    "saved": "Saved",
+    "shareCopied": "Copied to clipboard"
+  },
+  "history": {
+    "title": "Divination History",
+    "empty": "No divination records yet",
+    "emptyHint": "Start your first divination",
+    "saveRecord": "Save Record",
+    "viewHistory": "View History",
+    "clearHistory": "Clear History",
+    "confirmClear": "Are you sure you want to clear all history? This action cannot be undone.",
+    "clearSuccess": "History cleared",
+    "deleteConfirm": "Are you sure you want to delete this record?",
+    "deleteSuccess": "Record deleted",
+    "sortNewest": "Newest First",
+    "sortOldest": "Oldest First",
+    "filterAll": "All",
+    "filterGood": "Auspicious",
+    "filterNeutral": "Neutral",
+    "filterBad": "Inauspicious",
+    "totalRecords": "{{count}} record(s) in total",
+    "divinationTime": "Time",
+    "divinationMethod": "Method",
+    "noMethod": "Unknown",
+    "question": "Question",
+    "noQuestion": "Not specified"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeAuto": "System",
+    "fontSize": "Font Size",
+    "fontSmall": "Small",
+    "fontMedium": "Medium",
+    "fontLarge": "Large",
+    "autoSave": "Auto-save divination results",
+    "sound": "Sound Effects",
+    "about": "About Plum Yi"
+  },
+  "about": {
+    "title": "About Plum Yi",
+    "version": "Version",
+    "description": "Plum Yi is a divination app based on the traditional Chinese Plum Blossom Numerology theory. Created by Shao Yong in the Northern Song Dynasty, it is a flexible and convenient divination method.",
+    "disclaimer": "Disclaimer: This app is for learning and entertainment purposes only and does not constitute any form of decision-making advice.",
+    "techStack": "Tech Stack",
+    "openSource": "Open Source License"
+  },
+  "errors": {
+    "general": "An error occurred. Please try again later.",
+    "network": "Network connection failed. Please check your network settings.",
+    "notFound": "Page not found",
+    "goBack": "Back to Home",
+    "invalidInput": "Invalid input",
+    "saveFailed": "Failed to save",
+    "loadFailed": "Failed to load"
+  },
+  "common": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "loading": "Loading…",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "reset": "Reset",
+    "yes": "Yes",
+    "no": "No",
+    "copy": "Copy",
+    "copied": "Copied"
+  }
+}

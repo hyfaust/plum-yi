@@ -1,0 +1,206 @@
+/* ===== I Ching Divination App - Chinese Aesthetic Theme ===== */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap');
+
+:root {
+  /* Color palette */
+  --yi-bg: #faf6f0;
+  --yi-bg-warm: #f5ede0;
+  --yi-text: #2c1810;
+  --yi-text-secondary: #6b5c4f;
+  --yi-text-muted: #8b7355;
+  --yi-accent: #d4a574;
+  --yi-accent-dark: #b8860b;
+  --yi-border: rgba(139, 115, 85, 0.15);
+  --yi-shadow: rgba(44, 24, 16, 0.08);
+
+  /* Bootstrap overrides */
+  --bs-body-bg: var(--yi-bg);
+  --bs-body-color: var(--yi-text-secondary);
+  --bs-link-color: var(--yi-accent-dark);
+  --bs-link-hover-color: var(--yi-text);
+  --bs-body-font-family: 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--yi-bg);
+  color: var(--yi-text-secondary);
+  font-family: 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 115, 85, 0.2);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 115, 85, 0.4);
+}
+
+/* ===== Animations ===== */
+
+@keyframes lineAppear {
+  from {
+    opacity: 0;
+    transform: scaleX(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.3);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===== Page transitions ===== */
+
+.home-page,
+.iching-page,
+.meihua-page,
+.result-page,
+.history-page {
+  animation: fadeInUp 0.4s ease;
+}
+
+/* ===== Button hover effects ===== */
+
+.btn {
+  transition: all 0.25s ease !important;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px var(--yi-shadow);
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* ===== Form inputs ===== */
+
+input[type="number"],
+input[type="text"],
+textarea {
+  font-family: 'Noto Serif SC', 'Songti SC', serif !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgba(184, 134, 11, 0.4) !important;
+  box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.08) !important;
+}
+
+/* ===== Navbar active link underline ===== */
+
+.nav-link.active::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 2px;
+  background: var(--yi-accent);
+  margin: 2px auto 0;
+  border-radius: 1px;
+  transition: width 0.2s ease;
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* ===== Responsive adjustments ===== */
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hexagram-display {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* ===== Decorative patterns ===== */
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at top left, rgba(212, 165, 116, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom right, rgba(184, 134, 11, 0.03) 0%, transparent 50%);
+  z-index: -1;
+}
+
+/* ===== Print-friendly ===== */
+
+@media print {
+  .navbar, .btn {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+  }
+  main {
+    padding-top: 0 !important;
+  }
+}
