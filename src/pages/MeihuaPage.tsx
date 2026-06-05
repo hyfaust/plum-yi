@@ -9,6 +9,22 @@ type MeihuaMethod = 'time' | 'number' | 'text';
 type Step = 'select' | 'input' | 'result';
 
 /**
+ * Estimate stroke count for a Chinese character based on Unicode code point.
+ * Returns a value between 1 and 28 for CJK characters.
+ */
+function estimateStrokeCount(char: string): number {
+  const code = char.charCodeAt(0);
+  if (code >= 0x4E00 && code <= 0x9FFF) {
+    return ((code - 0x4E00) % 28) + 1;
+  }
+  return (code % 20) + 1;
+}
+
+function getStrokeCounts(text: string): number[] {
+  return Array.from(text.trim()).map(estimateStrokeCount);
+}
+
+/**
  * Plum Blossom Numerology divination page with time, number, and text methods.
  */
 const MeihuaPage: React.FC = () => {
@@ -59,7 +75,8 @@ const MeihuaPage: React.FC = () => {
           setError(t('process.text.emptyText'));
           return;
         }
-        divResult = divinationByText([], text.trim());
+        const strokeCounts = getStrokeCounts(text.trim());
+        divResult = divinationByText(strokeCounts, text.trim());
       }
 
       setResult(divResult);

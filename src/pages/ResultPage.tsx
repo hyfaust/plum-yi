@@ -371,7 +371,7 @@ const ResultPage: React.FC = () => {
 
         {(displayData as any).wuxingAnalysis && (
           <p style={{ color: '#6b5c4f', fontSize: '0.85rem', marginTop: '16px', textAlign: 'center', lineHeight: 1.7 }}>
-            {(displayData as any).wuxingAnalysis}
+            {(displayData as any).wuxingAnalysis.interpretation || String((displayData as any).wuxingAnalysis)}
           </p>
         )}
       </div>
